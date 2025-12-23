@@ -46,3 +46,8 @@ int main() {
 
     return 0;
 }
+
+## ⚠️ Important Considerations
+- Data Types: Currently supports int values only.
+- Memory Management: The current version uses new for allocations but does not yet include a custom destructor to delete nodes. Ensure to manage memory or implement a destructor to avoid leaks.
+- Error Handling: If addValue is called with a column name that does not exist, an error message is printed to cerr.
